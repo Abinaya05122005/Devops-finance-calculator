@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Finance Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">💰 SmartFinance</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#calculator">Calculator</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tag">SMART MONEY MANAGEMENT</p>
+
+            <h1>
+                Take Control of<br>
+                Your <span>Financial Future.</span>
+            </h1>
+
+            <p>
+                Calculate your savings, expenses, EMI and investments
+                in one simple place.
+            </p>
+
+            <a href="#calculator" class="hero-btn">
+                Start Calculating →
+            </a>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="card-title">
+                Financial Overview
+            </div>
+
+            <div class="money">
+                ₹50,000
+            </div>
+
+            <p>Monthly Income</p>
+
+            <div class="mini-data">
+
+                <div>
+                    <strong>₹30,000</strong>
+                    <small>Expenses</small>
+                </div>
+
+                <div>
+                    <strong>₹20,000</strong>
+                    <small>Savings</small>
+                </div>
+
+            </div>
+
+            <div class="progress">
+                <div></div>
+            </div>
+
+            <p class="saving-text">
+                40% of your income saved
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CALCULATOR -->
+
+    <section class="calculator-section" id="calculator">
+
+        <div class="section-heading">
+
+            <p>FINANCE TOOLS</p>
+
+            <h2>Smart Finance Calculator</h2>
+
+            <span>
+                Enter your financial details and understand your money better.
+            </span>
+
+        </div>
+
+
+        <div class="calculator-container">
+
+            <!-- INPUT -->
+
+            <div class="input-card">
+
+                <h3>Monthly Financial Details</h3>
+
+                <label>Monthly Income (₹)</label>
+
+                <input
+                    type="number"
+                    id="income"
+                    placeholder="Example: 50000"
+                >
+
+
+                <label>Monthly Expenses (₹)</label>
+
+                <input
+                    type="number"
+                    id="expenses"
+                    placeholder="Example: 30000"
+                >
+
+
+                <label>Monthly Investment (₹)</label>
+
+                <input
+                    type="number"
+                    id="investment"
+                    placeholder="Example: 5000"
+                >
+
+
+                <button onclick="calculateFinance()">
+                    Calculate
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="result-card">
+
+                <h3>Your Financial Summary</h3>
+
+                <div class="result-grid">
+
+                    <div class="result-box">
+                        <span>Remaining Money</span>
+                        <strong id="remaining">₹0</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Savings Rate</span>
+                        <strong id="savingRate">0%</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Investment</span>
+                        <strong id="investmentResult">₹0</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Financial Health</span>
+                        <strong id="health">-</strong>
+                    </div>
+
+                </div>
+
+                <div class="message" id="message">
+                    Enter your details to see your financial health.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="section-heading">
+
+            <p>WHAT YOU CAN CALCULATE</p>
+
+            <h2>Everything You Need</h2>
+
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <div class="icon">💵</div>
+
+                <h3>Income & Expenses</h3>
+
+                <p>
+                    Track your monthly income and understand where
+                    your money goes.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">📊</div>
+
+                <h3>Savings Calculator</h3>
+
+                <p>
+                    Find out how much money you can save every month.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">📈</div>
+
+                <h3>Investment Planning</h3>
+
+                <p>
+                    Plan your investments and build better financial habits.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">🏦</div>
+
+                <h3>EMI Calculator</h3>
+
+                <p>
+                    Calculate your monthly loan EMI easily.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <h2>Why SmartFinance?</h2>
+
+        <p>
+            SmartFinance helps users make better financial decisions
+            by providing simple and intelligent financial calculations.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 SmartFinance Calculator
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
